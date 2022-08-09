@@ -1,0 +1,4 @@
+com\emi\spring\mongo\api\model\customer.class
+com\emi\spring\mongo\api\EmiApplication.class
+com\emi\spring\mongo\api\service\customerservice.class
+com\emi\spring\mongo\api\resource\customercontroller.class
