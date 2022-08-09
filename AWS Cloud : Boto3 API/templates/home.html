@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> appointment booking </title> </head>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<body>
+
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">book appointment</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+<form action="{{url_for('book')}}" method="post">
+
+Application ID :<input type="text" name='appid'> <br>
+Name :<input type ="text" name='name'> <br>
+Date: <input type="text" name='data'> <br>
+Time: <input type="text" name='time'> <br>
+
+Description : <input type="text" name='description'> <br>
+
+
+<button type="submit" class="pink lighten-1 waves-light btn"><i class="material-icons left">submit</i></button>
+
+</body>
+</html>
+
+
