@@ -1,0 +1,21 @@
+
+
+<b>Username:</b><input type="text" [(ngModel)]="this.usern">  <button>activate</button><button>deactivate</button>
+
+<table>
+    
+<tr *ngFor ="let mods of mod">
+ <td>{{mods.username}}</td>
+    <td>{{mods.name}}</td>
+        <td>{{mods.phone}}</td>
+            <td>{{mods.dob}}</td>
+                <td>{{mods.email}}</td>
+                    <td>{{mods.password}}</td>
+                        <td>{{mods.address}}</td>
+                            <td>{{mods.cardtype}}</td>
+                                <td>{{mods.bank}}</td>
+                                    <td>{{mods.accountno}}</td>
+                                        <td>{{mods.ifsccode}}</td>
+                                            <td>{{mods.activate}}</td>
+</tr> 
+</table>

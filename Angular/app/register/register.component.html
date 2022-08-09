@@ -1,0 +1,22 @@
+Registration form 
+<form (ngSubmit)="onSubmit()" >
+<table border=1>
+    <tr><td>name:</td><td><input type="text" [(ngModel)]='mod.name' name="a"></td></tr>
+    <tr><td>date of birth:</td><td><input type="text" [(ngModel)]='mod.dob' name="b" ></td></tr>
+    <tr><td>Email ID:</td><td><input type="text" [(ngModel)]='mod.email' name="c"></td></tr>
+    <tr><td>Phone no:</td><td><input type="text" [(ngModel)]='mod.phone' name="d"></td></tr>
+    
+    <tr><td>User name:</td><td><input type="text" [(ngModel)]='mod.username' name="e"></td></tr>
+    <tr><td>Password:</td><td><input type="text" [(ngModel)]='mod.password' name="f"></td></tr>
+    <tr><td>confirm password:</td><td><input type="text" ></td></tr>
+    <tr><td>address:</td><td><input type="text"[(ngModel)]='mod.address' name="g"></td></tr>
+    <tr><td>card type:</td><td><input type="text" [(ngModel)]='mod.cardtype' name="h"></td></tr>
+    <tr><td>select bank:</td><td><input type="text" [(ngModel)]='mod.bank' name="i"></td></tr>
+    <tr><td>saving account no:</td><td><input type="text" [(ngModel)]='mod.accountno' name="j"></td></tr>
+    <tr><td>IFSC Code:</td><td><input type="text" [(ngModel)]='mod.ifsccode' name="k"></td></tr>
+    <input type="hidden" value="false"  [(ngModel)]="mod.activate">
+</table>
+<input type="submit"><input type="reset">
+</form>
+
+ Already member ? <a routerLink="/login">login here</a>
